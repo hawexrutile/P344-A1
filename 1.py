@@ -19,7 +19,7 @@ def survivors(N,a,T):
 
         
 
-surv1=survivors(500,0.00004,300)
+surv1=survivors(100,0.01,300)
 surv2=survivors(5000,0.03,300)
 
 plt.plot(surv1[0],surv1[1])
@@ -31,7 +31,7 @@ plt.show()
 plt.plot(surv2[0],surv2[1])
 plt.xlabel("t-->")
 plt.ylabel("N-->")
-plt.title("alpha=0.01,N=100 Linear")
+plt.title("alpha=0.03,N=5000 Linear")
 plt.show()
 
 
@@ -39,12 +39,12 @@ plt.semilogy()
 plt.plot(surv1[0],surv1[1])
 plt.xlabel("t-->")
 plt.ylabel("N-->")
-plt.title("alpha=0.01,N=100 Linear")
+plt.title("alpha=0.01,N=100 Log")
 plt.show()
 
 plt.semilogy()
 plt.plot(surv2[0],surv2[1])
 plt.xlabel("t-->")
 plt.ylabel("N-->")
-plt.title("alpha=0.01,N=100 Linear")
+plt.title("alpha=0.03,N=5000 Log")
 plt.show()
